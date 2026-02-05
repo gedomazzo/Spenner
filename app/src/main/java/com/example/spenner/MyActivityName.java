@@ -55,8 +55,7 @@ public class MyActivityName extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         String temp = item.getTitle().toString();
         if (temp.equals("back")) {
-            Intent kuku = new Intent(this, MainActivity.class);
-            startActivity(kuku);
+            finish();
         }
 
         return super.onOptionsItemSelected(item);

@@ -62,11 +62,25 @@ public class MainActivity extends AppCompatActivity {
         Intent shaw = new Intent(this, progression.class);
 
 
-        if (!a1.getText().toString().equals(""))  shaw.putExtra("a1", Integer.parseInt(a1.getText().toString()));
 
-        if (!q.getText().toString().equals("")) shaw.putExtra("q", Integer.parseInt(q.getText().toString()));
+        try {
+            shaw.putExtra("a1", Double.parseDouble(a1.getText().toString()));
+
+        } catch (NumberFormatException e) {
+            shaw.putExtra("a1", 2);
+        }
+
+
+        try {
+            shaw.putExtra("q", Double.parseDouble(q.getText().toString()));
+
+        } catch (NumberFormatException e) {
+            shaw.putExtra("q", 2);
+        }
+
+
+
         shaw.putExtra("type", type.isChecked());
-
         startActivity(shaw);
 
     }
