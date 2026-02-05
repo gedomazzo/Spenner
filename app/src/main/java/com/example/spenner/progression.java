@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 /**
  * @author        benjamin rogachevsky
  * @version       1.0
- * @since         1/7/26
+ * @since         2/5/26
  * This activity displays a numerical progression and calculates the sum of its terms.
  */
 public class progression extends AppCompatActivity implements AdapterView.OnItemSelectedListener {

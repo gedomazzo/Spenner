@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 /**
  * @author        benjamin rogachevsky
  * @version       1.0
- * @since         1/7/26
+ * @since         2/5/26
  * This activity displays the credits for the application.
  */
 public class MyActivityName extends AppCompatActivity {
